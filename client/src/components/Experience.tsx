@@ -51,20 +51,20 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section id="experience" className="py-20 bg-card">
+    <section id="experience" className="py-20 bg-primary text-primary-foreground">
       <div className="container">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">
             Experience
           </h2>
-          <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
+          <p className="text-center text-gray-300 mb-12 max-w-2xl mx-auto">
             13+ years of proven expertise across enterprise, agency, and freelance roles
           </p>
           <div className="space-y-6">
             {experiences.map((exp, index) => (
               <Card
                 key={index}
-                className="p-6 md:p-8 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-1 border-l-4 border-l-accent"
+                className="p-6 md:p-8 bg-white text-foreground shadow-md hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-l-4 border-l-accent"
               >
                 <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
                   <div className="flex-1">

@@ -45,7 +45,7 @@ export default function Navbar() {
   return (
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-background/95 backdrop-blur-sm shadow-md' : 'bg-transparent'
+        isScrolled ? 'bg-white/98 backdrop-blur-sm shadow-lg' : 'bg-primary/20 backdrop-blur-sm'
       }`}
     >
       <div className="container">
@@ -53,7 +53,9 @@ export default function Navbar() {
           {/* Logo/Name */}
           <a
             href="#hero"
-            className="text-xl md:text-2xl font-bold text-primary hover:text-accent transition-colors"
+            className={`text-xl md:text-2xl font-bold transition-colors ${
+              isScrolled ? 'text-primary hover:text-accent' : 'text-white hover:text-accent'
+            }`}
           >
             Samir Emam
           </a>
@@ -67,7 +69,7 @@ export default function Navbar() {
                 className={`text-sm font-medium transition-colors hover:text-accent ${
                   activeSection === link.href.substring(1)
                     ? 'text-accent'
-                    : 'text-foreground'
+                    : isScrolled ? 'text-foreground' : 'text-white'
                 }`}
               >
                 {t(`nav.${link.key}`)}
@@ -79,7 +81,9 @@ export default function Navbar() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-foreground hover:text-accent transition-colors"
+            className={`md:hidden p-2 hover:text-accent transition-colors ${
+              isScrolled ? 'text-foreground' : 'text-white'
+            }`}
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             aria-label="Toggle menu"
           >

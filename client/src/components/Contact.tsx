@@ -70,7 +70,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="py-20 bg-white">
       <div className="container">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-4">
@@ -181,7 +181,7 @@ export default function Contact() {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-primary hover:bg-accent"
+                  className="w-full bg-accent hover:bg-accent/90 text-white shadow-lg"
                 >
                   {isSubmitting ? (
                     'Sending...'

@@ -1,5 +1,6 @@
 import { Badge } from '@/components/ui/badge';
 import { useScrollAnimation } from '@/hooks/useScrollAnimation';
+import { useLanguage } from '@/contexts/LanguageContext';
 import {
   TrendingUp,
   Share2,
@@ -24,6 +25,7 @@ const skills = [
 
 export default function Skills() {
   const { elementRef, isVisible } = useScrollAnimation();
+  const { t } = useLanguage();
 
   return (
     <section id="skills" className="py-20">
@@ -44,7 +46,7 @@ export default function Skills() {
               return (
                 <div
                   key={skill.name}
-                  className="group relative overflow-hidden rounded-xl border-2 border-border bg-card p-6 text-center transition-all duration-300 hover:border-accent hover:shadow-lg hover:-translate-y-1 cursor-pointer"
+                  className="group relative overflow-hidden rounded-xl border-2 border-gray-200 bg-white p-6 text-center transition-all duration-300 hover:border-accent hover:shadow-xl hover:-translate-y-2 cursor-pointer"
                 >
                   <div className="flex flex-col items-center space-y-3">
                     <div className="p-3 rounded-full bg-accent/10 group-hover:bg-accent/20 transition-colors">
@@ -59,14 +61,14 @@ export default function Skills() {
             })}
           </div>
           <div className="mt-12 text-center">
-            <h3 className="text-xl font-bold text-primary mb-4">Platforms</h3>
+            <h3 className="text-xl font-bold text-primary mb-4">{t('skills.platforms')}</h3>
             <div className="flex flex-wrap justify-center gap-3">
               {['Facebook', 'Instagram', 'Twitter', 'YouTube', 'Google Ads', 'LinkedIn'].map(
                 (platform) => (
                   <Badge
                     key={platform}
                     variant="secondary"
-                    className="text-base px-4 py-2 bg-primary/10 text-primary hover:bg-accent hover:text-accent-foreground transition-colors"
+                    className="text-base px-4 py-2 bg-primary text-white hover:bg-accent transition-colors"
                   >
                     {platform}
                   </Badge>

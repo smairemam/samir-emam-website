@@ -35,7 +35,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section id="projects" className="py-20">
+    <section id="projects" className="py-20 bg-white">
       <div className="container">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-primary text-center mb-4">
@@ -50,7 +50,7 @@ export default function Projects() {
               return (
                 <Card
                   key={index}
-                  className="p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col overflow-hidden"
+                  className="p-6 bg-white border-2 border-gray-200 shadow-md hover:shadow-2xl hover:border-accent transition-all duration-300 hover:-translate-y-3 flex flex-col overflow-hidden rounded-xl"
                 >
                   <div className="mb-4">
                     <img
