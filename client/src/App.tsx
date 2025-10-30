@@ -5,6 +5,7 @@ import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
+import { useEffect } from "react";
 
 function Router() {
   return (
@@ -23,6 +24,16 @@ function Router() {
 // - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
 
 function App() {
+  useEffect(() => {
+    // SEO metadata
+    document.title = "Samir Emam — Social Media Marketing Specialist | Dubai";
+    
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', 'Experienced Social Media Specialist with 13+ years of campaign and content success. Currently at e& UAE — open to new opportunities.');
+    }
+  }, []);
+
   return (
     <ErrorBoundary>
       <ThemeProvider
