@@ -1,10 +1,29 @@
-# Deployment Guide
+# Deployment Guide - Vercel
 
-This guide will help you deploy the Samir Emam personal website to Vercel.
+This comprehensive guide will walk you through deploying the Samir Emam personal website to Vercel, step-by-step.
 
-## Quick Deploy to Vercel
+## Prerequisites
 
-### Option 1: Deploy via Vercel Dashboard (Recommended)
+- GitHub account with repository access
+- Vercel account (free tier available)
+- Domain name (optional, for custom domain)
+
+## Table of Contents
+
+1. [Quick Deploy (Recommended)](#quick-deploy-recommended)
+2. [Deploy via Vercel CLI](#deploy-via-vercel-cli)
+3. [Custom Domain Setup](#custom-domain-setup)
+4. [Environment Variables](#environment-variables)
+5. [Post-Deployment Configuration](#post-deployment-configuration)
+6. [Continuous Deployment](#continuous-deployment)
+7. [Performance Monitoring](#performance-monitoring)
+8. [Troubleshooting](#troubleshooting)
+
+---
+
+## Quick Deploy (Recommended)
+
+### Step-by-Step Vercel Dashboard Deployment
 
 1. **Visit Vercel**: Go to [vercel.com/new](https://vercel.com/new)
 

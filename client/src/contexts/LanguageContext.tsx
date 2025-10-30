@@ -68,11 +68,11 @@ const translations = {
   },
   ar: {
     // Navigation
-    'nav.about': 'نبذة',
+    'nav.about': 'نبذة عني',
     'nav.skills': 'المهارات',
-    'nav.experience': 'الخبرة',
+    'nav.experience': 'الخبرات',
     'nav.projects': 'المشاريع',
-    'nav.contact': 'اتصل بي',
+    'nav.contact': 'تواصل معي',
     
     // Hero
     'hero.title': 'سمير إمام',
@@ -88,12 +88,22 @@ const translations = {
     
     // Skills
     'skills.title': 'المهارات الأساسية',
-    'skills.subtitle': 'خبرة عبر منصات التواصل الاجتماعي واستراتيجية الحملات وتحسين الأداء',
+    'skills.subtitle': 'خبرة متقدمة في منصات التواصل الاجتماعي، استراتيجيات الحملات، وتحسين الأداء',
     'skills.platforms': 'المنصات',
+    'skills.socialMedia': 'التسويق عبر وسائل التواصل',
+    'skills.digitalMarketing': 'التسويق الرقمي',
+    'skills.campaignStrategy': 'استراتيجية الحملات',
+    'skills.analytics': 'التحليلات والبيانات',
+    'skills.contentCreation': 'إنشاء المحتوى',
+    'skills.communityManagement': 'إدارة المجتمعات',
+    'skills.paidAdvertising': 'الإعلانات المدفوعة',
+    'skills.brandStrategy': 'استراتيجية العلامة التجارية',
     
     // Experience
-    'experience.title': 'الخبرة',
-    'experience.subtitle': 'أكثر من 13 عامًا من الخبرة المثبتة عبر أدوار المؤسسات والوكالات والعمل الحر',
+    'experience.title': 'الخبرات العملية',
+    'experience.subtitle': '+13 عامًا من الخبرة المثبتة في المؤسسات الكبرى، الوكالات، والعمل الحر',
+    'experience.present': 'حتى الآن',
+    'experience.years': 'سنوات',
     
     // Projects
     'projects.title': 'المشاريع المميزة',
@@ -116,10 +126,11 @@ const translations = {
     'contact.sending': 'جاري الإرسال...',
     
     // Footer
-    'footer.description': 'أخصائي تسويق عبر وسائل التواصل الاجتماعي مع أكثر من 13 عامًا من الخبرة في دفع نمو العلامة التجارية والتفاعل.',
+    'footer.description': 'أخصائي تسويق عبر وسائل التواصل الاجتماعي مع +13 عامًا من الخبرة في تحقيق نمو العلامات التجارية وزيادة التفاعل.',
     'footer.quickLinks': 'روابط سريعة',
     'footer.getInTouch': 'تواصل معنا',
     'footer.copyright': 'جميع الحقوق محفوظة.',
+    'footer.linkedinProfile': 'الملف الشخصي على لينكد إن',
   },
 };
 
