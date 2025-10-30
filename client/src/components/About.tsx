@@ -16,7 +16,16 @@ export default function About() {
             className={`transition-all duration-700 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
           >
             <Card className="p-8 md:p-12 shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <div className="prose prose-lg max-w-none">
+              <div className="grid md:grid-cols-[300px_1fr] gap-8 items-center mb-6">
+                <div className="mx-auto md:mx-0">
+                  <img
+                    src="/assets/images/profile.jpg"
+                    alt="Samir Emam - Social Media Marketing Specialist"
+                    className="rounded-2xl shadow-lg w-full max-w-[300px] h-auto object-cover"
+                  />
+                </div>
+                <div>
+
                 <p className="text-lg text-foreground leading-relaxed">
                   I'm <strong>Samir Emam</strong> — a Social Media Marketing Specialist with{' '}
                   <strong>13+ years of hands-on experience</strong> building engagement and brand
@@ -32,6 +41,7 @@ export default function About() {
                   data-driven insights to deliver measurable results that drive business growth and
                   brand awareness.
                 </p>
+                </div>
               </div>
             </Card>
           </div>

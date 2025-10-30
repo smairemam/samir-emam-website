@@ -9,6 +9,7 @@ const projects = [
       'Developed and executed multi-platform social media strategy across Facebook, Instagram, and Twitter with targeted content and paid advertising',
     result: '+40% engagement rate, +25% follower growth, improved brand sentiment across all channels',
     icon: Target,
+    image: '/assets/images/social-media-campaign.jpg',
   },
   {
     title: 'Contact Center Digital Presence',
@@ -18,6 +19,7 @@ const projects = [
     result:
       'Successfully built engaged community, reduced response time by 50%, increased customer satisfaction scores',
     icon: Zap,
+    image: '/assets/images/content-creation.jpg',
   },
   {
     title: 'Multi-Client Campaign Management',
@@ -27,6 +29,7 @@ const projects = [
     result:
       'Consistent growth in reach and engagement, improved ROI for paid campaigns, long-term client retention',
     icon: TrendingUp,
+    image: '/assets/images/digital-strategy.jpg',
   },
 ];
 
@@ -47,9 +50,14 @@ export default function Projects() {
               return (
                 <Card
                   key={index}
-                  className="p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col"
+                  className="p-6 shadow-md hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col overflow-hidden"
                 >
                   <div className="mb-4">
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-48 object-cover rounded-lg mb-4"
+                    />
                     <div className="inline-flex p-3 rounded-full bg-accent/10 mb-4">
                       <Icon className="h-8 w-8 text-accent" />
                     </div>

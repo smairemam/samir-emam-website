@@ -1,16 +1,8 @@
 import { Button } from '@/components/ui/button';
-import { Download, Mail } from 'lucide-react';
+import { Mail } from 'lucide-react';
 
 export default function Hero() {
-  const handleDownloadCV = () => {
-    // Analytics event tracking placeholder
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('event', 'cv_download', {
-        event_category: 'engagement',
-        event_label: 'CV Download',
-      });
-    }
-  };
+
 
   return (
     <section id="hero" className="min-h-screen flex items-center justify-center pt-20 pb-16">
@@ -25,23 +17,11 @@ export default function Hero() {
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
             Campaign-led content. Measurable engagement. Brand growth.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-6">
+          <div className="flex justify-center pt-6">
             <Button
               asChild
               size="lg"
               className="bg-primary hover:bg-accent text-lg px-8 py-6"
-              onClick={handleDownloadCV}
-            >
-              <a href="/assets/SamirProfile.pdf" download>
-                <Download className="mr-2 h-5 w-5" />
-                Download CV (PDF)
-              </a>
-            </Button>
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="text-lg px-8 py-6 border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
             >
               <a href="#contact">
                 <Mail className="mr-2 h-5 w-5" />

@@ -1,20 +1,22 @@
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
-import { Download, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import { useLanguage } from '@/contexts/LanguageContext';
+import LanguageToggle from './LanguageToggle';
 
 const navLinks = [
-  { name: 'About', href: '#about' },
-  { name: 'Skills', href: '#skills' },
-  { name: 'Experience', href: '#experience' },
-  { name: 'Projects', href: '#projects' },
-  { name: 'Education', href: '#education' },
-  { name: 'Contact', href: '#contact' },
+  { key: 'about', href: '#about' },
+  { key: 'skills', href: '#skills' },
+  { key: 'experience', href: '#experience' },
+  { key: 'projects', href: '#projects' },
+  { key: 'contact', href: '#contact' },
 ];
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('');
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -38,15 +40,7 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleDownloadCV = () => {
-    // Analytics event tracking placeholder
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('event', 'cv_download', {
-        event_category: 'engagement',
-        event_label: 'CV Download',
-      });
-    }
-  };
+
 
   return (
     <nav
@@ -68,7 +62,7 @@ export default function Navbar() {
           <div className="hidden md:flex items-center space-x-8">
             {navLinks.map((link) => (
               <a
-                key={link.name}
+                key={link.key}
                 href={link.href}
                 className={`text-sm font-medium transition-colors hover:text-accent ${
                   activeSection === link.href.substring(1)
@@ -76,20 +70,11 @@ export default function Navbar() {
                     : 'text-foreground'
                 }`}
               >
-                {link.name}
+                {t(`nav.${link.key}`)}
               </a>
             ))}
-            <Button
-              asChild
-              variant="default"
-              className="bg-primary hover:bg-accent"
-              onClick={handleDownloadCV}
-            >
-              <a href="/assets/SamirProfile.pdf" download>
-                <Download className="mr-2 h-4 w-4" />
-                Download CV
-              </a>
-            </Button>
+            <LanguageToggle />
+
           </div>
 
           {/* Mobile Menu Button */}
@@ -108,7 +93,7 @@ export default function Navbar() {
             <div className="flex flex-col space-y-4">
               {navLinks.map((link) => (
                 <a
-                  key={link.name}
+                  key={link.key}
                   href={link.href}
                   className={`text-sm font-medium transition-colors hover:text-accent ${
                     activeSection === link.href.substring(1)
@@ -117,20 +102,11 @@ export default function Navbar() {
                   }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  {link.name}
+                  {t(`nav.${link.key}`)}
                 </a>
               ))}
-              <Button
-                asChild
-                variant="default"
-                className="bg-primary hover:bg-accent w-full"
-                onClick={handleDownloadCV}
-              >
-                <a href="/assets/SamirProfile.pdf" download>
-                  <Download className="mr-2 h-4 w-4" />
-                  Download CV
-                </a>
-              </Button>
+              <LanguageToggle />
+
             </div>
           </div>
         )}

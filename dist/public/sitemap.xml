@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://samiremam.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://samiremam.com/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://samiremam.com/?lang=ar" />
+    <lastmod>2025-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://samiremam.com/#about</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://samiremam.com/#about" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://samiremam.com/?lang=ar#about" />
+    <lastmod>2025-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://samiremam.com/#skills</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://samiremam.com/#skills" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://samiremam.com/?lang=ar#skills" />
+    <lastmod>2025-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://samiremam.com/#experience</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://samiremam.com/#experience" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://samiremam.com/?lang=ar#experience" />
+    <lastmod>2025-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://samiremam.com/#projects</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://samiremam.com/#projects" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://samiremam.com/?lang=ar#projects" />
+    <lastmod>2025-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://samiremam.com/#contact</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://samiremam.com/#contact" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://samiremam.com/?lang=ar#contact" />
+    <lastmod>2025-10-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+</urlset>

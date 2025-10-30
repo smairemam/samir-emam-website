@@ -1,17 +1,9 @@
-import { Download, Mail, Phone, Linkedin } from 'lucide-react';
+import { Mail, Phone, Linkedin } from 'lucide-react';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
-  const handleDownloadCV = () => {
-    // Analytics event tracking placeholder
-    if (typeof window !== 'undefined' && (window as any).gtag) {
-      (window as any).gtag('event', 'cv_download', {
-        event_category: 'engagement',
-        event_label: 'CV Download Footer',
-      });
-    }
-  };
+
 
   return (
     <footer className="bg-primary text-primary-foreground py-12">
@@ -91,15 +83,7 @@ export default function Footer() {
                   <Linkedin className="h-4 w-4" />
                   LinkedIn Profile
                 </a>
-                <a
-                  href="/assets/SamirProfile.pdf"
-                  download
-                  onClick={handleDownloadCV}
-                  className="flex items-center gap-2 text-sm opacity-90 hover:opacity-100 hover:text-accent transition-all font-medium"
-                >
-                  <Download className="h-4 w-4" />
-                  Download CV
-                </a>
+
               </div>
             </div>
           </div>
